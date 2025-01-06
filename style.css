@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.navbar .logo {
+  width: 150px;
+}
+
+.navbar .logo img {
+  width: 100%;
+}
+
+.navbar .nav-list {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar .nav-list li {
+  list-style: none;
+}
+
+.navbar .nav-list li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 40px;
+}
+
+.navbar .nav-scm {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar .nav-scm li {
+  list-style: none;
+  font-size: 20px;
+}
