@@ -82,6 +82,21 @@ body {
   height: 100vh;
   text-align: center;
   background-image: url("./assets/hero.jpg");
+  background-size: cover;
+}
+
+.hero-content {
+  z-index: 5;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #785a4451;
 }
 
 .hero .hero-content h1 {
@@ -115,4 +130,123 @@ body {
   -moz-transition: all ease-in-out 0.2s;
   -ms-transition: all ease-in-out 0.2s;
   -o-transition: all ease-in-out 0.2s;
+}
+
+/* about */
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem;
+}
+
+.about h2 {
+  font-size: 3rem;
+}
+
+.about h2 span {
+  color: #cdb391;
+}
+
+.about-content {
+  display: flex; /* Mengatur elemen anak secara horizontal */
+  align-items: center; /* Menjaga elemen sejajar secara vertikal */
+  padding-top: 2rem;
+}
+
+.about-left {
+  flex: 1; /* Memastikan bagian kiri mengambil ruang yang proporsional */
+  max-width: 50%; /* Batas maksimum 50% lebar kontainer */
+}
+
+.about-left img {
+  width: 100%; /* Gambar memenuhi seluruh area about-left */
+  height: auto; /* Menjaga rasio aspek gambar */
+  object-fit: cover; /* Menjaga agar gambar tetap proporsional */
+}
+
+.about-right {
+  flex: 1; /* Memastikan bagian kanan proporsional dengan kiri */
+  padding: 20px; /* Beri jarak agar teks tidak terlalu dekat */
+  max-width: 50%; /* Batas maksimum 50% lebar kontainer */
+}
+
+.about-right h3 {
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.about-right p {
+  font-size: 1rem;
+  padding: 20px;
+}
+
+.about-right button {
+  color: white;
+  background: #cdb391;
+  border: 2px solid#cdb391;
+  padding: 15px 50px;
+  font-size: 1rem;
+  font-family: "Playfair", serif;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.about-right button:hover {
+  color: #cdb391;
+  border: 2px solid #cdb391;
+  background: transparent;
+  transition: all ease-in-out 0.2s;
+  -webkit-transition: all ease-in-out 0.2s;
+  -moz-transition: all ease-in-out 0.2s;
+  -ms-transition: all ease-in-out 0.2s;
+  -o-transition: all ease-in-out 0.2s;
+}
+
+/* service */
+.service {
+  background-color: #cdb391;
+  padding: 4rem;
+  margin: 5rem 0;
+}
+
+.service h2 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.service h2 span {
+  color: white;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* line-height: 20px; */
+  gap: 2rem;
+}
+
+.flex-service {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.flex-service p {
+  line-height: 14px;
+  font-size: 14~px;
+}
+
+.service-icon {
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: #f5f2ed;
+  margin: 10px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
 }
