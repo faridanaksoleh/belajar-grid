@@ -342,13 +342,13 @@ body {
 }
 
 .btn {
-  padding: 10px;
-  margin: 2rem;
+  padding: 10px 25px;
+  margin: 3rem;
   color: white;
   background-color: #cdb391;
   border: none;
   font-size: 1rem;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
 }
 
 .btn:hover {
@@ -365,4 +365,142 @@ body {
   -moz-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   -o-transform: translateY(-5px);
+}
+
+/* gallery */
+.gallery {
+  /* padding: 5rem; */
+  /* text-align: center; */
+  background-color: #999;
+}
+
+.item-1 {
+  display: grid;
+  grid-template-areas:
+    "header form"
+    "paragraph form";
+  grid-template-columns: 1fr 1fr; /* Kolom kiri dan kanan sama besarnya */
+  gap: 10px; /* Jarak antar elemen */
+  align-items: center; /* Menyejajarkan elemen secara vertikal */
+  padding: 20px;
+}
+
+h1 {
+  grid-area: header;
+  font-size: 2rem;
+  margin: 0;
+}
+
+p {
+  grid-area: paragraph;
+  font-size: 20px;
+  color: white;
+  margin: 0;
+}
+
+form {
+  grid-area: form;
+  display: flex;
+  gap: 10px; /* Jarak antara input dan button */
+  justify-content: flex-end; /* Pastikan form di kanan */
+  align-items: center;
+}
+
+input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 60%; /* Sesuaikan lebar input */
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #cdb391;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: #cdb391;
+  transition: all ease-in-out 0.3s;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -ms-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
+}
+
+/* Variabel untuk tema */
+:root {
+  --overlay-color: rgba(0, 0, 0, 0.5);
+  --icon-color: white;
+  --hover-scale: 1.1;
+  --gap: 15px;
+  --border-radius: 8px;
+}
+
+/* Grid responsif */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsif */
+  /* gap: var(--gap); */
+}
+
+.item-2 {
+  position: relative;
+  overflow: hidden;
+  /* border-radius: var(--border-radius); */
+}
+
+.item-2 .images {
+  height: 200px;
+}
+
+/* Styling gambar */
+.item-2 .images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  /* border-radius: var(--border-radius); */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Overlay styling */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--overlay-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Ikon dalam overlay */
+.icon i {
+  font-size: 2em;
+  color: var(--icon-color);
+}
+
+/* Hover efek */
+.item-2:hover img {
+  transform: scale(var(--hover-scale));
+  filter: brightness(0.8); /* Efek redup */
+}
+
+.item-2:hover .overlay {
+  opacity: 1;
 }
