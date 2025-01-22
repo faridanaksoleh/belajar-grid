@@ -8,6 +8,11 @@ body {
   font-family: "Playfair", serif;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
 /* navbar */
 .navbar {
   display: flex;
@@ -41,13 +46,13 @@ body {
 
 .navbar .nav-list li a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 40px;
   color: black;
 }
 
 .navbar .nav-list li a:hover {
-  color: rgb(1, 146, 1);
+  color: #cdb391;
   transition: all ease-in-out 0.3s;
   -webkit-transition: all ease-in-out 0.3s;
   -moz-transition: all ease-in-out 0.3s;
@@ -63,10 +68,11 @@ body {
 .navbar .nav-scm li {
   list-style: none;
   font-size: 20px;
+  padding: 10px;
 }
 
 .navbar .nav-scm li a {
-  color: rgb(1, 146, 1);
+  color: #cdb391;
 }
 
 .navbar .nav-scm li a:hover {
@@ -123,8 +129,8 @@ body {
 
 .hero .hero-content button:hover {
   color: white;
-  border: 2px solid white;
   background: transparent;
+  border: 2px solid white;
   transition: all ease-in-out 0.2s;
   -webkit-transition: all ease-in-out 0.2s;
   -moz-transition: all ease-in-out 0.2s;
@@ -371,7 +377,7 @@ body {
 .gallery {
   /* padding: 5rem; */
   /* text-align: center; */
-  background-color: #999;
+  background-color: #ecd0ab;
 }
 
 .item-1 {
@@ -382,16 +388,16 @@ body {
   grid-template-columns: 1fr 1fr; /* Kolom kiri dan kanan sama besarnya */
   gap: 10px; /* Jarak antar elemen */
   align-items: center; /* Menyejajarkan elemen secara vertikal */
-  padding: 20px;
+  padding: 2rem;
 }
 
-h1 {
+.item-1 h1 {
   grid-area: header;
   font-size: 2rem;
   margin: 0;
 }
 
-p {
+.gallery p {
   grid-area: paragraph;
   font-size: 20px;
   color: white;
@@ -503,4 +509,68 @@ button:hover {
 
 .item-2:hover .overlay {
   opacity: 1;
+}
+
+/* footer */
+.footer {
+  margin: 0;
+  padding: 5rem;
+  background-color: #44392a;
+  box-sizing: border-box;
+}
+
+.footer-grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-item {
+  margin: 0;
+  padding: 1rem;
+}
+
+.item1 a {
+  padding: 1rem;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.item1 a:hover {
+  color: #cdb391;
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+}
+
+.item2 {
+  text-align: center;
+}
+
+.icon-footer {
+  padding: 1rem;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+.icon-footer:hover {
+  color: #cdb391;
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+}
+
+.footer .paragraph {
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 5px;
+  color: white;
 }

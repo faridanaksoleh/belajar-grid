@@ -21,11 +21,11 @@
         </div>
 
         <ul class="nav-list">
-            <li><a href="/halo">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Service</a></li>
-            <li><a href="">Featured</a></li>
-            <li><a href="">Gallery</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#gallery">Gallery</a></li>
         </ul>
 
         <ul class="nav-scm">
@@ -50,7 +50,7 @@
 
 
     <!-- hero -->
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero-content">
             <h1>Hijrah from jahiliyah</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quos.</p>
@@ -60,7 +60,7 @@
 
 
     <!-- about -->
-    <section class="about">
+    <section class="about" id="about">
         <h2>About <span>us</span></h2>
 
         <div class="about-content">
@@ -92,7 +92,7 @@
 
 
     <!-- service -->
-    <section class="service">
+    <section class="service" id="service">
         <h2>Our <span>Services</span></h2>
 
         <div class="service-grid">
@@ -128,7 +128,7 @@
 
 
     <!-- feature -->
-    <section class="feature">
+    <section class="feature" id="feature">
         <div class="feature__header">
             <h2 class="feature__title">Our Features</h2>
             <p class="feature__subtitle">Discover the amazing features we offer.</p>
@@ -195,17 +195,17 @@
 
 
     <!-- gallery -->
-    <section class="gallery">
+    <section class="gallery" id="gallery">
+        <div class="item-1">
+            <h1>Want Latest Tour Info And Updates?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <form>
+                <input type="email" name="email" placeholder="Enter your email" />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
         <div class="gallery-container">
-            <!-- 
-            <div class="item-1">
-                <h1>Want Latest Tour Info And Updates?</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <form>
-                    <input type="email" name="email" placeholder="Enter your email" />
-                    <button type="submit">Submit</button>
-                </form>
-            </div> -->
+
 
 
             <div class="item-2">
@@ -295,9 +295,34 @@
                     </span>
                 </div>
             </div>
-
         </div>
     </section>
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-item item1">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#service">Service</a>
+                <a href="#feature">Feature</a>
+                <a href="#gallery">Gallery</a>
+            </div>
+            <div class="footer-item item2">
+                <span class="icon-footer">
+                    <i class='bx bxl-facebook'></i>
+                </span>
+                <span class="icon-footer">
+                    <i class='bx bxl-whatsapp'></i>
+                </span>
+                <span class="icon-footer">
+                    <i class='bx bxl-instagram'></i>
+                </span>
+            </div>
+            <p class="paragraph">Copyright 2023. All right reserved &copy;</p>
+        </div>
+    </footer>
 </body>
 
 </html>
