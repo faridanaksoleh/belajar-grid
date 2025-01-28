@@ -1,15 +1,7 @@
-function show() {
-  console.log();
-}
+const toggle = document.getElementById('menu_toggle');
+const sideBar = document.getElementById('nav_list');
 
-function pzrid() {
-  console.log("pppppppppppppp");
-  console.log("pppppppppppppp");
-  console.log("pppppppppppppp");
-  console.log("pppppppppppppp");
-  console.log("pppppppppppppp");
-  console.log("pppppppppppppp");
-  console.log("pppppppppppppp");
-  console.log("pppppppppppppp");
-  console.log("pppppppppppppp");
-}
+
+toggle.addEventListener('click', () => {
+  sideBar.classList.toggle('show');
+})

@@ -1,0 +1,20 @@
+@media screen and (max-width: 480px) {
+/* navbar */
+    .nav-list {
+        width: 200px;
+    }
+/* hero */
+    .hero .hero-content h1 {
+        font-size: 4rem;
+    }
+    .hero .hero-content p {
+        margin: 1rem;
+        font-size: 20px;
+    }
+
+
+/* service */
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+}

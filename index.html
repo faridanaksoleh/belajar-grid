@@ -5,22 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latihan flex-grid</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./style/desktop.css">
+    <link rel="stylesheet" href="./style/tablet.css">
+    <link rel="stylesheet" href="./style/mobile.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
         rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="./main.js" defer></script>
 </head>
 
 <body>
     <!-- navbar -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="logo">
             <img src="/assets/logo.png" alt="">
         </div>
 
-        <ul class="nav-list">
+        <span class="menu-toggle" id="menu_toggle">
+            <i class='bx bx-menu'></i>
+        </span>
+
+        <ul class="nav-list" id="nav_list">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#service">Service</a></li>
@@ -50,7 +57,8 @@
 
 
     <!-- hero -->
-    <section class="hero" id="hero">
+    <section class="hero" id="home">
+
         <div class="hero-content">
             <h1>Hijrah from jahiliyah</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quos.</p>
@@ -75,12 +83,8 @@
                     Quisquam quod assumenda consequatur sapiente iusto nemo. Eum, expedita nobis. Iste qui nisi ratione
                     nemo, dolorem aut eum laudantium laboriosam in doloremque? Ratione, vel est!.</p>
 
-                <br>
-
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error mollitia nesciunt, ullam veritatis
                     vero repudiandae ut provident facilis ipsam praesentium.</p>
-
-                <br>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ullam mollitia, hic autem placeat
                     libero sint recusandae consectetur nisi expedita laudantium perferendis. Quaerat, mollitia deserunt
@@ -128,7 +132,7 @@
 
 
     <!-- feature -->
-    <section class="feature" id="feature">
+    <section class="feature" id="featured">
         <div class="feature__header">
             <h2 class="feature__title">Our Features</h2>
             <p class="feature__subtitle">Discover the amazing features we offer.</p>
@@ -199,15 +203,13 @@
         <div class="item-1">
             <h1>Want Latest Tour Info And Updates?</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <form>
+            <form class="form">
                 <input type="email" name="email" placeholder="Enter your email" />
                 <button type="submit">Submit</button>
             </form>
         </div>
+
         <div class="gallery-container">
-
-
-
             <div class="item-2">
                 <div class="images">
                     <img src="./assets/feature-1.jpeg" alt="Description of image 1">
