@@ -3,6 +3,7 @@
     .nav-list {
         width: 200px;
     }
+
 /* hero */
     .hero .hero-content h1 {
         font-size: 4rem;
@@ -12,9 +13,42 @@
         font-size: 20px;
     }
 
+/* about */
+    .about-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .about-left {
+        max-width: 100%;
+    }
+    .about-right {
+        max-width: 100%;
+        padding: 0;
+    }
+    .about-right button {
+        margin: 2rem;
+        padding: 15px 20px;
+    }
 
 /* service */
     .service-grid {
         grid-template-columns: 1fr;
     }
-}
+
+/* footer */
+    .footer {
+        padding: 2rem 1rem 4rem 1rem;
+    }
+    .footer-grid {
+        gap: 1rem;
+    }
+    .item1 a {
+        font-size: 12px;
+    }
+    .item2 {
+        padding: 10px;
+    }
+    .footer .paragraph {
+        font-size: 13px;
+    }
+} 
